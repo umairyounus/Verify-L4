@@ -143,7 +143,7 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
 		}
 	}
 
-	private function getToCheck()
+	protected function getToCheck()
 	{
 		if (empty($this->to_check_cache))
 		{
